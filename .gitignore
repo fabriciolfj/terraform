@@ -1,0 +1,8 @@
+
+aula1/.terraform.lock.hcl
+
+aula1/.terraform/providers/registry.terraform.io/hashicorp/aws/3.72.0/linux_amd64/terraform-provider-aws_v3.72.0_x5
+
+*.backup
+
+aula1/terraform.tfstate
