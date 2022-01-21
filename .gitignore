@@ -8,3 +8,9 @@ aula1/.terraform/providers/registry.terraform.io/hashicorp/aws/3.72.0/linux_amd6
 aula1/terraform.tfstate
 
 .idea/
+
+*.hcl
+
+*.0_x5
+
+*.tfstate

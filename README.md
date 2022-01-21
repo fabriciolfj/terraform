@@ -40,3 +40,24 @@ terraform destroy -var-file="prod.ftvars"
 #### OutPuts values
 - quando queremos mostrar algum na tela
 - montando um módulo
+
+#### Arquivo tfstate
+- Arquivo que fica registrado tudo que o terraform fez no provedor
+- Para ver o conteúdo, podemos executar terraform show
+
+#### Console terraform
+- para ter acesso ao console, podemos executar terraform console
+- o console é utíl para ver os detalhes do recurso, exemplo: nome.this.nome do atributo ou nomedorecurso.nomedoobjeto.nomedoatributo
+
+#### Import terraform
+- tem por objetivo importar um recurso que não foi criado, ou seja, não gerenciado pelo terraform para o terraform
+- exemplo: terraform import aws_s3_bucket.nome nomedorecursonaawsnaogerenciado
+
+#### Remote state
+- terraform guarda os arquivos em um armazenamento remoto (ex: aws s3)
+- data: pega dados da conta
+- resource: envia dados para a conta
+- Executando um apply com versionamento: 
+```
+terraform init -backend=true -backend-config="backend.hcl"
+```
