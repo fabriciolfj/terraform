@@ -1,0 +1,1 @@
+terraform output -json > s3/outputs.json
